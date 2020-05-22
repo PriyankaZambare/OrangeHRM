@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+          <listener class-name="Utilities.Reporting" />
+</listeners>
+
+  <test thread-count="5" name="Test">
+ <parameter name="browser" value="Chrome" />
+    <classes>
+   <!--     <class name="TestCases.LoginTest"/> -->
+   <!--    <class name="TestCases.TC_LoginTest_002"/>  -->
+           <class name="TestCases.TC_HtmlTable_003"/>  
+         <!--     <class name="TestCases.TC_DataPicker_004"/>   -->
+         <!--       <class name="TestCases.TC_FileUpload_005"/>      -->  
+   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
