@@ -8,11 +8,11 @@
   <test thread-count="5" name="Test">
  <parameter name="browser" value="Chrome" />
     <classes>
-   <!--     <class name="TestCases.LoginTest"/> -->
-   <!--    <class name="TestCases.TC_LoginTest_002"/>  -->
-           <class name="TestCases.TC_HtmlTable_003"/>  
-         <!--     <class name="TestCases.TC_DataPicker_004"/>   -->
-         <!--       <class name="TestCases.TC_FileUpload_005"/>      -->  
+          <!--   <class name="TestCases.LoginTest"/>            -->
+   <!--      <class name="TestCases.TC_LoginTest_002"/>            -->  
+             <!--    <class name="TestCases.TC_HtmlTable_003"/>   -->
+           <!--         <class name="TestCases.TC_DataPicker_004"/>      -->
+           <class name="TestCases.TC_FileUpload_005"/>    
    
     </classes>
   </test> <!-- Test -->

@@ -22,7 +22,7 @@ public class TC_FileUpload_005 extends BaseClass{
 		
 		FileUploads fp=new FileUploads(driver);
 		fp.Actionpim();
-		fp.clkbrowserbtn();
+		fp.FileUploadForBird("C:\\Users\\Priya\\Pictures\\birds img\\FiveBirds.jpg");
 		logger.info("File is uploaded");
 		
 	}

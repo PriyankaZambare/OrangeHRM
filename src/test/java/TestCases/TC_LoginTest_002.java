@@ -2,6 +2,7 @@ package TestCases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -14,14 +15,21 @@ public class TC_LoginTest_002 extends BaseClass {
 	@Test(dataProvider="LoginTest")
 	public void Data(String user,String pwd)
 	{
+		logger.info("Url is opened");
 		LoginPage lp=new LoginPage(driver);
 	     
 		lp.SetUsername(user);
+		logger.info("Entered username");
+		
 		lp.SetPassword(pwd);
+		logger.info("Entered password");
 		lp.ClickLoginBtn();
 		
-		if(driver.getTitle().equals("OrangeHRM"))
+		
+		if(driver.getCurrentUrl().equals("https://opensource-demo.orangehrmlive.com/index.php/dashboard"))
 		{
+			driver.findElement(By.linkText("Welcome Admin")).click();
+			driver.findElement(By.linkText("Logout")).click();
 			Assert.assertTrue(true);
 			logger.info("Test case pass");
 		}
@@ -55,7 +63,7 @@ public class TC_LoginTest_002 extends BaseClass {
 	return logindata;
 	}
 	
-	
+	//http://way2automation.com/way2auto_jquery/index.php
 		
 	
 }
